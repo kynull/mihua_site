@@ -1,0 +1,216 @@
+{extend name="base" /}
+{block name="title"}{$title}{/block}
+{block name="css"}
+<link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage-2.1.9.css">
+{/block}
+{block name="js"}
+<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>
+<script src="/static/js/home.js"></script>
+{/block}
+
+{block name="content"}
+<div id="mihua_home">
+    <div class="section">
+        <div class="banner">
+            <div class="info">
+                <h3 class="title"><b>普惠金融 助力三农</b></h3>
+                <p class="description">
+                    <span>以金融服务为核心</span>
+                    <span>以产投联动为纽带</span>
+                    <span>以资本市场为支点</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section business">
+        <div class="container">
+            <h3>BUSINESS <span class="text">INTRODUCTION</span></h3>
+            <div class="title">
+                <h2>业务介绍</h2>
+                <p>
+                    Publish scientific and technological konwledge and policy information in the fields of  new technology<br/>
+                    for rural prosperity, agricultural dominant species and the main push technology,<br/>
+                    agricultural science and technology demonstration base,local agricultural association.
+                </p>
+            </div>
+            <ul>
+                <li>
+                    <div class="box">
+                        <i class="icon-business"></i>
+                        <h3><a href="{:url('Product/trader')}">惠商贷</a></h3>
+                        <p>
+                            主要对长期从事生产、贸易、服务的公司、个体提供的担保和抵押贷款
+                        </p>
+                        <a class="btn-apply" href="{:url('Product/trader')}">我要申请</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <i class="icon-farm"></i>
+                        <h3><a href="{:url('Product/farming')}">惠农贷</a></h3>
+                        <p>
+                            对长期、合法从事农业相关的个体户和个人发放的信用或担保贷款
+                        </p>
+                        <a class="btn-apply" href="{:url('Product/farming')}">我要申请</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <i class="icon-house"></i>
+                        <h3><a href="{:url('Product/house')}">房易贷</a></h3>
+                        <p>
+                            主要对持有房产证或者房产按揭中的客户，以房产为抵押物，解决生产、经营过程中流动资金的中短期借款
+                        </p>
+                        <a class="btn-apply" href="{:url('Product/house')}">我要申请</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <i class="icon-car"></i>
+                        <h3><a href="{:url('Product/car')}">微车贷</a></h3>
+                        <p>
+                            主要对有行车执照车辆的客户以车辆为质押物，解决生产、经营过程中流动资金的中短期借款
+                        </p>
+                        <a class="btn-apply" href="{:url('Product/car')}">我要申请</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section introduction">
+        <div class="container">
+            <h3>MIHUA <span class="text">INTRODUCTION</span></h3>
+            <div class="title">
+                <h2>普惠金融&nbsp;&nbsp;助力三农</h2>
+            </div>
+            <a class="desc" href="{:url('About/intro')}">
+                米花金服致力为中小企业，个体工商户，三农提供企业运营咨询，
+                财务管理咨询，生产技术指导，互联网咨询，二维码支付等服务，
+                竭力为客户提供高效率，多方位定制服务！
+            </a>
+        </div>
+    </div>
+    <div class="section procedure">
+        <div class="container">
+            <h3>借款申请流程</h3>
+            <ul>
+                <li>
+                    <div class="box">
+                        <i class="icon-pro-first"></i>
+                        <h3>额度申请</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <i class="icon-pro-second"></i>
+                        <h3>风控审核</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <i class="icon-pro-third"></i>
+                        <h3>签订合同</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <i class="icon-pro-fourth"></i>
+                        <h3>急速放款</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <div class="college">
+            <div class="container">
+                <h3>MIHUA <span class="text">COLLEGE</span></h3>
+                <div class="title">
+                    <h2>米花学院</h2>
+                    <p>
+                        Aiming at borrowing needs,we design product structure, <br/>
+                        to provide investors with a more flexible,profitable, and secure exclusive products
+                    </p>
+                </div>
+                <div class="carousel row">
+                    <!--<div class="poster-btn poster-prev-btn"></div>-->
+                    <div class="item col-xs-4 col-md-3">
+                        <a href="{:url('College/detail',['id'=>3])}" >
+                            <img src="/static/images/3_20170720153956.jpg" alt="农田改建">
+                            <div class="caption">
+                                <h3>
+                                    【课堂】农田改建需谨慎，轻则罚款、重则入狱
+                                </h3>
+                                <p>
+                                    想做农业你得先有块地，但有了地，也不代表你可以任性的搞种植、做养殖...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item col-xs-4 col-md-3">
+                        <a href="{:url('College/detail',['id'=>1])}" >
+                            <img src="/static/images/1_20170720143212.jpg" alt="">
+                            <div class="caption">
+                                <h3>
+                                    2017年农村改造都有补贴，不知道就亏大了
+                                </h3>
+                                <p>
+                                    近年来，国家对三农方面的支持政策不断调整，农民能够享受到的补贴福利也越来越多...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item col-xs-4 col-md-3">
+                        <a href="{:url('College/detail',['id'=>4])}" >
+                            <img src="/static/images/4_20170720155427.jpg" alt="">
+                            <div class="caption">
+                                <h3>
+                                    每亩交7元，最高获赔850元！13省试点玉米保险补贴
+                                </h3>
+                                <p>
+                                    当前，多数玉米主产区已完成播种工作，甚至一些播种早的地区玉米苗已经长到齐腰高了。可...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item col-xs-4 col-md-3">
+                        <a href="{:url('College/detail',['id'=>5])}" >
+                            <img src="/static/images/5_20170720155719.jpg" alt="">
+                            <div class="caption">
+                                <h3>
+                                    农民专业合作社法修订草案解读
+                                </h3>
+                                <p>
+                                    农民专业合作社是带动农户进入市场的基本主体，是创新农村社会管理的有效载体...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!--<div class="poster-btn poster-next-btn"></div>-->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="rg-content">
+                    <div class="tit">联系我们</div>
+                    <div class="tel-number">400-9969-695</div>
+                    <div class="worktime">
+                        <p>工作日：9:00~20:00</p>
+                        <p>周末及节假日：9:30~17:00</p>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="/"></a>
+                    <span class="tip"></span>
+                </div>
+                <div class="copy">
+                    <p>Copyright©2017 mihua.co All Rights Reserved. <span class="company-name">重庆米花金服信息技术有限公司</span> <span class="icp">渝ICP备08010314号-1</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

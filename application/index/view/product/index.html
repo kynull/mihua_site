@@ -1,0 +1,135 @@
+{extend name="base" /}
+{block name="title"}{$title}{/block}
+{block name="css"}{/block}
+{block name="js"}
+
+{/block}
+
+{block name="content"}
+<div class="contents product">
+    <div class="banner">
+        <div class="container">
+            <h2>在您需要帮助的时候请想起我 <small>帮助您，是我们的天职</small></h2>
+            <div class="tips">
+                <p>如果您有任何疑问请您与客户人员联系</p>
+                <h3>全国唯一热线:400-9969-695</h3>
+                <span>(工作日：9:00-18:00&nbsp;&nbsp;节假日：9:00-16:00)</span>
+            </div>
+        </div>
+    </div>
+    <div class="nav clearfix">
+        <div class="container">
+            <div class="current">
+                <div class="title">主要业务</div>
+                <div class="en">Product</div>
+            </div>
+            <div class="position">
+                <span class="control">当前位置:</span>
+                <a href="javascript:;">首页</a>
+                <span class="divide">-&gt;</span>
+                <a href="javascript:;">主营业务</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">
+            <h2>热门贷款产品</h2>
+        </div>
+        <div class="row pro-item">
+            <div class="col-md-3">
+                <a href="{:url('Product/trader')}">
+                    <img src="/static/images/productA.jpg" alt="惠商贷">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h1><a href="{:url('Product/trader')}">惠商贷</a></h1>
+                <p>主要对长期从事生产、贸易、服务的公司、个体提供的担保和抵押贷款</p>
+                <ul>
+                    <li>借款额度: 3万元 &nbsp; — &nbsp; 300万元</li>
+                    <li>借款期限: 3个月 &nbsp; — &nbsp; 1年</li>
+                    <li>还款方式: 等额本息或分期还款</li>
+                </ul>
+            </div>
+            <div class="col-md-3 controller">
+                <a class="btn-apply" href="{:url('Product/trader')}">我要申请</a>
+            </div>
+        </div>
+        <div class="row pro-item">
+            <div class="col-md-3">
+                <a href="{:url('Product/farming')}">
+                    <img src="/static/images/productB.jpg" alt="惠农贷">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h1><a href="{:url('Product/farming')}">惠农贷</a></h1>
+                <p>对长期、合法从事农业相关的个体户和个人发放的信用或担保贷款</p>
+                <ul>
+                    <li>借款额度: 3万元  &nbsp; — &nbsp; 10万元</li>
+                    <li>借款期限: 3个月 &nbsp; — &nbsp; 1年</li>
+                    <li>还款方式: 分期还款</li>
+                </ul>
+            </div>
+            <div class="col-md-3 controller">
+                <a class="btn-apply" href="{:url('Product/farming')}">我要申请</a>
+            </div>
+        </div>
+        <div class="row pro-item">
+            <div class="col-md-3">
+                <a href="{:url('Product/salary')}">
+                    <img src="/static/images/productE.jpg" alt="工薪贷">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h1><a href="{:url('Product/salary')}">工薪贷</a></h1>
+                <p>主要对长期从事生产、贸易、服务的公司、个体提供的担保和抵押贷款</p>
+                <ul>
+                    <li>借款额度: 5000元 &nbsp; — &nbsp; 5万元</li>
+                    <li>借款期限: 1个月 &nbsp; — &nbsp; 6个月</li>
+                    <li>还款方式: 每月付息，到期还本</li>
+                </ul>
+            </div>
+            <div class="col-md-3 controller">
+                <a class="btn-apply" href="{:url('Product/salary')}">我要申请</a>
+            </div>
+        </div>
+        <div class="row pro-item">
+            <div class="col-md-3">
+                <a href="{:url('Product/car')}">
+                    <img src="/static/images/productC.jpg" alt="微车贷">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h1><a href="{:url('Product/car')}">微车贷</a></h1>
+                <p>主要对有行车执照车辆的客户以车辆为质押物，解决生产、经营过程中流动资金的中短期借款</p>
+                <ul>
+                    <li>借款额度: 2万元 &nbsp; — &nbsp; 50万元</li>
+                    <li>借款期限: 1个月 &nbsp; — &nbsp; 24个月</li>
+                    <li>还款方式: 等额本息或到期还款</li>
+                </ul>
+            </div>
+            <div class="col-md-3 controller">
+                <a class="btn-apply" href="{:url('Product/car')}">我要申请</a>
+            </div>
+        </div>
+        <div class="row pro-item">
+            <div class="col-md-3">
+                <a href="{:url('Product/house')}">
+                    <img src="/static/images/productD.jpg" alt="房易贷">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h1><a href="{:url('Product/house')}">房易贷</a></h1>
+                <p>主要对持有房产证或者房产按揭中的客户，以房产为抵押物，解决生产、经营过程中流动资金的中短期借款</p>
+                <ul>
+                    <li>借款额度: 10万元 &nbsp; — &nbsp; 300万元</li>
+                    <li>借款期限: 1个月 &nbsp; — &nbsp; 12个月</li>
+                    <li>还款方式: 等额本息或到期还款</li>
+                </ul>
+            </div>
+            <div class="col-md-3 controller">
+                <a class="btn-apply" href="{:url('Product/house')}">我要申请</a>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

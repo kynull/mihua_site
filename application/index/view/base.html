@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="cjky@bilai.net">
+    <meta name="copyright" content="重庆米花金服信息技术有限公司版权所有">
+    <meta name="description" content="米花金服">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{block name="title"}{/block}-米花金服</title>
+    <link href="/static/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="/static/less/all.less">
+    <script type="text/javascript" src="https://cdn.bootcss.com/less.js/2.7.2/less.js"></script>
+    {block name="css"}{/block}
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">展开</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="logo navbar-brand" href="/"></a>
+                    <span class="tip visible-lg-block"></span>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{:url('Index/index')}"><i class="glyphicon glyphicon-home"></i>首页 <span class="sr-only">(current)</span></a></li>
+                        <li><!--class="dropdown"-->
+                            <a href="{:url('About/intro')}">走进米花</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{:url('About/intro')}">公司介绍</a></li>
+                                <li><a href="{:url('About/culture')}">企业文化</a></li>
+                                <li><a href="{:url('About/joint')}">合作伙伴</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{:url('Product/index')}">米花普惠</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{:url('Product/trader')}">惠商贷</a></li>
+                                <li><a href="{:url('Product/farming')}">惠农贷</a></li>
+                                <li><a href="{:url('Product/salary')}">工薪贷</a></li>
+                                <li><a href="{:url('Product/house')}">房易贷</a></li>
+                                <li><a href="{:url('Product/car')}">微车贷</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{:url('Keeper/index')}">米花掌柜</a></li>
+                        <li><a href="{:url('College/index')}">米花学院</a></li>
+                        <li><a href="{:url('About/contact')}">联系我们</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+</header>
+<div class="main">
+    {block name="content"}{/block}
+</div>
+<footer>
+    <div class="container">
+        <div class="rg-content">
+            <div class="tit">联系我们</div>
+            <div class="tel-number">400-9969-695</div>
+            <div class="worktime">
+                <p>工作日：9:00~20:00</p>
+                <p>周末及节假日：9:30~17:00</p>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="/"></a>
+            <span class="tip"></span>
+        </div>
+        <div class="copy">
+            <p>Copyright©2017 mihua.co All Rights Reserved. <span class="company-name">重庆米花金服信息技术有限公司</span> <span class="icp">渝ICP备17009628号</span></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="/static/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+{block name="js"}{/block}
+</body>
+</html>
